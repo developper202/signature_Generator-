@@ -1,1 +1,146 @@
- <script src="signateure.js"></script>
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+form{
+    margin-bottom:30px;
+}
+
+input{
+    width:450px;
+    padding:8px;
+    border-radius:5px;
+    border:1px solid gray;
+    background-color:white;
+    color:black;
+}
+
+input:focus{
+    border:2px solid #007bff;
+    outline:none;
+}
+
+button{
+    width:450px;
+    padding:8px;
+    background-color:rgb(49, 186, 3);
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+#signature-card{
+    width:650px;
+    padding:25px;
+    border:1px solid #ccc;
+    background-color:white;
+    color:black;
+}
+
+.top-section{
+    display:flex;
+    align-items:flex-start;
+    gap:30px;
+}
+
+.logo{
+    padding-right:25px;
+    border-right:2px solid #777;
+}
+
+.logo img{
+    width:220px;
+}
+
+.info{
+    flex:1;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info h2{
+    margin:0;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.info .title{
+    margin:8px 0 15px 0;
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+.contact{
+    display:flex;
+    align-items:center;
+    gap:17px;
+    margin:11px;
+}
+
+.contact img{
+    width:20px;
+}
+
+.contactemail img{     
+    width:40px;
+}
+
+.bottom-line{
+    border-top:2px solid #777;
+    margin:20px 0 15px 0;
+}
+
+#location{
+    margin-top:10px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+#location img{
+    width:20px;
+}
+
+.contact a{
+    text-decoration:none;  
+    color:black;         
+}
+
+@media (prefers-color-scheme: dark){
+
+    body{
+        background-color:#121212;
+        color:white;
+    }
+
+    input{
+        background-color:#1e1e1e;
+        color:white;
+        border:1px solid #555;
+    }
+
+    #signature-card{
+        background-color:#1e1e1e;
+        color:white;
+        border:1px solid #444;
+    }
+
+    .logo{
+        border-right:2px solid #aaa;
+    }
+
+    .bottom-line{
+        border-top:2px solid #aaa;
+    }
+
+    .contact a{
+        color:white;
+    }
+ }
